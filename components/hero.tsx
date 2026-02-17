@@ -17,10 +17,10 @@ export function Hero() {
                 <Image
                     src={heroImage}
                     alt="lego-sets-hero-section"
-                    className="animate-hero-image-border h-full w-full object-cover"
+                    className="animate-hero-image-border hidden h-full w-full object-cover md:block"
                 />
-                <div className="absolute inset-10 flex animate-[800ms_ease-in-out_1s_forwards_fade-in] flex-col items-center justify-center gap-10 rounded-xl bg-black/5 opacity-0">
-                    <h1 className="font-title max-w-200 text-center text-7xl text-black">
+                <div className="absolute inset-5 flex animate-[800ms_ease-in-out_1s_forwards_fade-in] flex-col items-center justify-center gap-10 rounded-xl opacity-0 md:inset-10 md:bg-black/5">
+                    <h1 className="font-title max-w-200 text-center text-4xl text-black md:text-7xl">
                         Never miss a brick. Every piece accounted for.
                     </h1>
                     <div className="border/60 flex w-full max-w-125 flex-row items-center gap-3 rounded-md border bg-white px-2.5 pt-2 pb-1 text-black shadow">
