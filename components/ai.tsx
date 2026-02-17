@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 export function AiFeatures() {
     return (
         <section className="flex w-full justify-center p-10 py-30">
-            <div className="border/60 flex w-full max-w-300 flex-col items-center gap-10">
+            <div className="border/60 flex w-full max-w-7xl flex-col items-center gap-10">
                 <div className="flex flex-col items-center gap-5">
                     <h2 className="font-title text-5xl">
                         AI Assisted search and suggestions

@@ -37,9 +37,16 @@ export function Features() {
 
     return (
         <section className="flex w-full justify-center p-10">
-            <div className="border/60 flex w-full flex-row gap-4 overflow-hidden rounded-xl border">
+            <div className="border/60 flex w-full max-w-7xl flex-col gap-4 overflow-hidden rounded-sm border md:flex-row">
                 <div className="flex flex-1 flex-col justify-between p-4">
-                    <h2 className="font-title text-5xl">Built for builders</h2>
+                    <div>
+                        <h2 className="font-title text-5xl">
+                            Built for builders
+                        </h2>
+                        <span className="font-content text-muted-foreground text-sm">
+                            Search. Explore. Export.
+                        </span>
+                    </div>
 
                     <Accordion
                         type="single"
@@ -49,7 +56,7 @@ export function Features() {
                         onValueChange={onFeatureChange}
                     >
                         <AccordionItem value="search">
-                            <AccordionTrigger className="font-title text-xl font-bold">
+                            <AccordionTrigger className="font-title py-4 text-lg font-semibold">
                                 Search anything
                             </AccordionTrigger>
                             <AccordionContent className="font-content">
@@ -58,7 +65,7 @@ export function Features() {
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="explore">
-                            <AccordionTrigger className="font-title text-xl font-bold">
+                            <AccordionTrigger className="font-title py-4 text-lg font-semibold">
                                 Explore every piece
                             </AccordionTrigger>
                             <AccordionContent className="font-content">
@@ -68,7 +75,7 @@ export function Features() {
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="export">
-                            <AccordionTrigger className="font-title text-xl font-bold">
+                            <AccordionTrigger className="font-title py-4 text-lg font-semibold">
                                 Export clean data
                             </AccordionTrigger>
                             <AccordionContent className="font-content">
@@ -80,11 +87,11 @@ export function Features() {
                     </Accordion>
                 </div>
 
-                <div className="flex-2 p-4">
+                <div className="h-full flex-1 p-4 lg:flex-2">
                     <Image
                         src={imageSource}
                         alt="image section"
-                        className="rounded-xl"
+                        className="h-full w-full rounded-xl object-cover"
                     />
                 </div>
             </div>
