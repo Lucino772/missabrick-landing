@@ -8,19 +8,49 @@
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+
+    --font-title: var(--font-crimson-pro);
+    --font-content: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+@theme {
+    --animate-hero-zoom-in:
+        800ms ease-in-out 0s 1 normal forwards running fade-in,
+        300ms ease-out 800ms 1 normal forwards running padding-inset;
+    --animate-hero-image-border: 300ms ease-out 800ms 1 normal forwards running
+        rounded-in;
 }
 
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: var(--font-title);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes padding-inset {
+    from {
+        padding: 0;
+    }
+    to {
+        padding: 30px;
+    }
+}
+
+@keyframes rounded-in {
+    from {
+        border-radius: 0px;
+    }
+    to {
+        border-radius: 12px;
+    }
 }
