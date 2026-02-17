@@ -3,6 +3,8 @@ import { Crimson_Pro, Inter } from "next/font/google";
 
 import "./globals.css";
 
+import { TooltipProvider } from "@/components/ui/tooltip";
+
 import { cn } from "@/lib/utils";
 
 const crimsonPro = Crimson_Pro({
@@ -34,7 +36,7 @@ export default function RootLayout({
                     inter.variable,
                 )}
             >
-                {children}
+                <TooltipProvider>{children}</TooltipProvider>
             </body>
         </html>
     );

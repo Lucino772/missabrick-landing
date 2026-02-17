@@ -1,8 +1,14 @@
-import { SearchIcon } from "lucide-react";
+import { PaperclipIcon, SearchIcon } from "lucide-react";
 import Image from "next/image";
 
 import heroImage from "@/assets/lego-sets-hero-section.png";
 
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { AiFeatures } from "@/components/ai";
 import { Features } from "@/components/features";
 import { Stats } from "@/components/stats";
 
@@ -26,6 +32,14 @@ export default function Home() {
                                 className="font-content focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 aria-invalid:border-destructive placeholder:text-muted-foreground w-full min-w-0 flex-1 rounded-none border-0 bg-transparent py-1.5 text-base shadow-none ring-0 transition-colors outline-none focus-visible:ring-0 disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-transparent disabled:opacity-50 aria-invalid:ring-0 md:text-lg"
                                 placeholder="Search sets, parts, or describe a piece…"
                             />
+                            <Tooltip>
+                                <TooltipTrigger>
+                                    <PaperclipIcon className="mb-px size-5 cursor-pointer opacity-50 transition-opacity hover:opacity-100" />
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    Upload images of sets, parts or minifigs
+                                </TooltipContent>
+                            </Tooltip>
                         </div>
                         <Stats />
                     </div>
@@ -33,6 +47,7 @@ export default function Home() {
             </div>
 
             <Features />
+            <AiFeatures />
         </>
     );
 }
