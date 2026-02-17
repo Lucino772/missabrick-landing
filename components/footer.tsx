@@ -6,7 +6,7 @@ export function Footer() {
                     <div className="font-content flex-1 justify-start text-neutral-600">
                         © <span id="year">2026</span> Luca Palmisano
                     </div>
-                    <div className="font-title flex-1 text-center font-medium tracking-wide">
+                    <div className="font-title flex-1 text-center font-medium tracking-wide text-neutral-500">
                         MissABrick
                     </div>
                     <div className="flex flex-1 justify-end">

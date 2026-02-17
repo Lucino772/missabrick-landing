@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import inteligentMatchingFeat from "@/assets/ai-intelligent-matching.webp";
+import smartSuggestionsFeat from "@/assets/ai-smart-suggestions.webp";
 import talkSearchFeat from "@/assets/ai-talk-search.webp";
 import visualSearchFeat from "@/assets/ai-visual-search.webp";
 
@@ -25,18 +27,18 @@ export function AiFeatures() {
                         />
                         <div className="flex flex-col gap-4">
                             <h3 className="font-title text-xl font-bold">
-                                Natural language search
+                                Natural Language Search
                             </h3>
                             <p className="font-content">
-                                “small gray hinge thing” “red 2x4 brick” “that
-                                slanted windshield piece” MissABrick
-                                understands.
+                                Search the way you think. Describe a piece in
+                                plain language, MissABrick understands the
+                                intent and finds the right part.
                             </p>
                         </div>
                     </div>
                     <div className="flex flex-row items-center gap-5">
                         <Image
-                            src={talkSearchFeat}
+                            src={smartSuggestionsFeat}
                             alt="image section"
                             className="size-25 rounded-xl"
                         />
@@ -45,8 +47,9 @@ export function AiFeatures() {
                                 Smart suggestions
                             </h3>
                             <p className="font-content">
-                                Get similar parts. Discover compatible
-                                alternatives. Explore beyond exact matches.
+                                Get relevant alternatives instantly. Discover
+                                compatible parts, similar elements, and common
+                                substitutions beyond exact matches.
                             </p>
                         </div>
                     </div>
@@ -58,25 +61,29 @@ export function AiFeatures() {
                         />
                         <div className="flex flex-col gap-4">
                             <h3 className="font-title text-xl font-bold">
-                                Visual search
+                                Visual Search
                             </h3>
                             <p className="font-content">
-                                Upload a photo. Find the part. Experimental.
+                                Upload a photo of a piece and let AI identify
+                                it. Experimental, but improving with every
+                                search.
                             </p>
                         </div>
                     </div>
                     <div className="flex flex-row items-center gap-5">
                         <Image
-                            src={visualSearchFeat}
+                            src={inteligentMatchingFeat}
                             alt="image section"
                             className="size-25 rounded-xl"
                         />
                         <div className="flex flex-col gap-4">
                             <h3 className="font-title text-xl font-bold">
-                                Visual search
+                                Intelligent Matching
                             </h3>
                             <p className="font-content">
-                                Upload a photo. Find the part. Experimental.
+                                Find parts that fit the same role. See
+                                compatible variants, updated molds, and
+                                interchangeable elements at a glance.
                             </p>
                         </div>
                     </div>
