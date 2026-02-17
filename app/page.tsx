@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/tooltip";
 import { AiFeatures } from "@/components/ai";
 import { Features } from "@/components/features";
+import { Footer } from "@/components/footer";
 import { Stats } from "@/components/stats";
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
 
             <Features />
             <AiFeatures />
+            <Footer />
         </>
     );
 }
